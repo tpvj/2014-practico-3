@@ -1,15 +1,17 @@
-practico-2
+practico-3
 ==========
 
-Resolución del Práctico 2 - Animaciones
+Resolución del Práctico 3 - Menúes
 
 Ejercicios
 ==========
-1. Plantear una jerarquía de clases para los objetos de pantalla.
-2. Animar el avión a partir de los eventos del teclado (inclinación de la nave).
-3. Agregar animación a la propulsión de la nave (fuego/energía) y colgar esta animación del objeto
-avión.
-4. Animar fondo en 3 niveles de profundidad probando animar mediante texturas grandes vs. objetos sueltos.
-5. Aumentar cantidad de asteroides.
-6. Añadir disparos desde la nave.
-7. Hacer explotar los asteroides cuando choquen contra un disparo.
+1. Idear una estructura de clases para separar las diferentes escenas del Juego (menu principal, ayuda y el juego).
+2. Crear un menú principal con los botones de “Jugar” y “Ayuda”
+3. Crear la pantalla de Ayuda
+4. Implementar la navegación entre escenas de la sig. manera: MenuScene:
+Jugar => GameScene Ayuda => HelpScene
+HelpScene:
+Back => MenuScene
+GameScene:
+Back => MenuScene
+5. Mejorar la transición entre escenas utilizando animaciones (probar la librería actuate).
